@@ -1,0 +1,1130 @@
+/*
+Theme Name: Wordpost
+Theme URI: http://bestwebsoft.com/theme/wordpost/
+Description: Theme for Wordpress, which is simple to install and use solution for your website. Can be used for a variety of thematic resources with a custom slide show that will attract visitors.
+Author: the BestWebSoft team
+Author URI: https://github.com/bestwebsoft
+Version: 1.0.3
+Tags: white, blue, two-columns, fixed-width
+Text Domain: wordpost
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+*/
+@charset "utf-8";
+@import url(css/reset.css);
+/* --------------------------------- main tags ---------------------------------------*/
+html {
+	height: 100%;
+}
+body {
+	font-family:"Open Sans";
+	font-size:13px;
+	color:#525252;
+	height:100%;
+}
+div { 
+	display: block;
+}
+p {
+	font-weight: lighter;
+	font-size:13px;
+	color:#525252;
+	word-spacing:1px;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	font-size:13px;
+	color: #267896;
+}
+code {
+	font-family:"Courier New";
+	color:#aaaaaa;
+}
+blockquote {
+	font-style: Italic;
+	background: #267896;
+	padding: 10px 25px 0 18px;
+	display:inline-block;
+}
+blockquote p{
+	color: #FFFFFF;
+	margin-bottom:15px !important;
+	display:inline-block;
+}
+blockquote a{
+	color: #fff;
+	padding:10px;
+	text-decoration:underline;
+}
+ins {
+    background: none repeat scroll 0 0  #b0e2ff;
+    text-decoration: none;
+}
+dt {
+	font-family:"Open Sans";
+	font-size:15px;
+	font-weight: bold;
+	margin-bottom:2px;
+}
+dd{
+	margin-left:30px;
+	margin-bottom:21px;
+}
+pre{
+	background:#fff;
+	border:1px solid #D9D9D9;
+	margin-bottom:30px;
+	padding-left:20px;
+	padding-top:14px;
+	width:520px;
+	line-height:21px;
+	letter-spacing:0.01px;
+	word-spacing:0.05px;
+	overflow: auto;
+}
+/* ---------------------------------- style --------------------------------------------*/
+#wrapper{
+	min-height:100%;
+}
+.clear{
+	clear:both;
+}
+/* --------------------------------- Header---------------------------------------------*/
+#header{
+}
+#header_top{
+	background-color:#267896;
+}
+/* ------------ #masthead --------------------------*/
+#masthead{
+	width:940px;
+	margin:0 auto;
+}
+#helper_head {
+	display:inline-block;
+	width:940px;
+}
+#Nameblog {	
+	display:inline-block;
+	padding-top: 19px;
+	padding-bottom: 18px;57px
+	width: 380px;
+	position: relative;
+	word-wrap: break-word;
+}
+.site-header h3 a, .site-header h3 span {	
+	color:#FFFFFF;
+	font-size: inherit;
+}
+.site-header h3 span{
+	margin-left:5px;
+	font-family: "Open Sans";
+	font-weight: lighter;
+	font-size:13px;
+}
+#navigation {
+	width:520px;
+	float:right;
+	padding-right: 21px;
+}
+/* --------------------menu navigation ----------------------*/
+#navigation ul {
+	float:right;
+	position: relative;
+}
+#navigation ul li {
+	list-style-type: none;
+	float: left;
+	padding-left: 36px;
+	position: relative;
+	padding-top:20px;
+	padding-bottom:22px;
+}
+#navigation ul li a {
+	color:#fff;
+	display: block;
+	text-transform: uppercase;
+	position:relative;
+}
+#navigation ul li a:hover{
+	color:#A8C9D5;
+}
+/* ----The style for the arrow of the active menu item-----*/
+.nav-menu .current-item-arrow {
+	position:absolute;
+	top:60px;
+	right:40px;
+}
+.nav-menu li ul .current-item-arrow {
+	display: none;
+}
+/*------ Opening the drop-down menu when you hover-------*/
+#navigation ul ul{
+	display:none;
+	width: auto !important;	
+}
+#navigation ul li:hover > ul{
+	display:block;
+}
+/*-------- The style for the drop down menu -----------*/
+#navigation ul ul{
+background: url("images/drop_nav_arrow.png") no-repeat top,
+		url("images/drop_menu_bottom.png") no-repeat bottom;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	position: absolute;
+	z-index:999;
+	right:0px;
+	top:58px; /*IE 7*/
+}
+#navigation ul ul li{
+	float: none;
+	display: block;
+	padding:5px 0px 8px 0px !important;
+	width: 220px;
+	background: #f9f9f9;
+	border-left: 1px solid #D9D9D9;
+	border-right: 1px solid #D9D9D9;
+}
+#navigation ul ul li a{
+	text-transform: none;
+	color:#444444;
+	height:auto !important;
+	padding: 10px 10px 8px 18px;
+}
+#navigation ul ul li a:hover{
+	background-color:#267896 !important;
+	color:#A8C9D5 !important;
+}
+/*-------- Release of the active sub-menu  -------------*/
+.current-menu-item a{
+	background-color:#267896 !important;
+	color:#A8C9D5 !important;
+}
+.current-menu-item ul li a {
+	background:none !important;
+	color: #444444  !important;
+}
+.current-menu-item:hover {
+	color:#fff;
+}
+/* ----- Style drop-down menu for the second and more levels -----*/
+#navigation ul ul ul{
+	top:10px;
+	right: 100%;
+	padding-top: 6px;
+	background: url("images/drop_menu_top.png") no-repeat top,
+			url("images/drop_menu_bottom.png") no-repeat bottom;
+}
+#navigation ul ul ul ul ul ul{
+	right: -100%;
+}
+#navigation ul ul ul ul ul ul ul ul ul{
+	top: 15px !important;
+	right: 100%;
+}
+/*---------------- end menu styles -----------------  */
+/*-----------------   #headbottom -----------------------  */
+#headbottom {
+	width:940px;
+	margin:0 auto;
+	padding-top:19px;
+	height: 82px; 
+	overflow: hidden;
+}
+#site-description{
+	float:left;
+	width: 620px;
+	padding-top: 5px;
+}
+/*--------   style for pagination---------------  */
+.pagination1{
+	padding-top:7px;
+	color: #686868;
+	word-wrap: break-word;
+}
+.pagination1 ul{
+	float: left;	
+}
+.pagination1 a{
+	float: left;	
+	color: #A6A6A6;
+}
+/*--------   style for searchform ---------------  */
+.input_div {
+	display:inline !important;
+}
+#search{
+	float:right;
+	padding-top:6px;
+	position:relative;
+}
+.s{
+	font-family: "Open Sans";
+	font-size:13px;	
+	color:#AAAAAA;
+	border-bottom: 1px solid #D9D9D9;
+	border-left: 1px solid #D9D9D9;
+	border-right: 1px solid #D9D9D9;
+	border-top: 1px solid #D9D9D9;
+	border-radius: 4px;
+	height: 40px;
+	line-height: 40px;
+	padding:0 10px 0 10px;
+	margin-right:5px;
+	width: 172px;
+	display:inline-block;
+	behavior: url(PIE.htc); 
+}
+/*----- search button -------  */
+#searchsubmit{
+	position:relative;
+	top:-6px;
+	width: 100px;
+	height: 41px;
+	font-size:13px;
+	background: #f4c656;
+	color: #9a7d38;
+	border-bottom: 1px solid #f4c656;
+	border-left: 1px solid #f4c656;
+	border-right: 1px solid #f4c656;
+	border-top: 1px solid #f4c656;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-family: Calibri;
+	cursor: pointer;
+	resize: none;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	word-wrap: break-word;
+	margin: 10px 0 0;
+	padding: 6px;
+	behavior: url(PIE.htc); 
+}
+/*----- image in the header -------  */
+.header-image {
+	display:block;
+	margin:0 auto;
+}
+/*-------------------------------  Slider  ---------------------------------------*/
+#slider-wrap {
+	width:940px;
+	margin: 0 auto 57px;
+	position:relative;
+	z-index:500;
+}
+#slider{ 
+	width:940px;
+	height:327px;
+	overflow: hidden;
+	margin:0;
+	padding:0;
+	position:relative;
+	z-index:100;
+}
+.slide{ 
+	width:100%;
+	height:100%;
+	z-index:101;
+	background:#red !important;
+}
+#slider img{
+	border-radius: 5px;
+}
+
+.sli-links{
+	text-align:center;
+	float: left;
+	z-index:10;
+	position: absolute;
+	z-index:400;
+	top: 287px;
+	margin: 0 auto;
+	width: 940px;
+}
+.control-slide{
+	z-index:300;
+}
+.sli-links .control-slide{
+	margin-right: 4px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	font-size: 0;
+	background:url("images/indicator.png") no-repeat center;
+}
+.sli-links .control-slide:hover{
+	cursor:pointer;
+}
+.sli-links .control-slide.active{
+	background:url("images/indicator_hover.png") no-repeat;
+}
+.title_slide{
+	position: absolute;
+	z-index:11;
+	top:27px;
+	left:0;
+	width:382px;
+	background:url("images/bg_caption.png");
+	padding: 24px 38px 39px 520px;
+	overflow: hidden;
+}
+.title_slide h1{
+	text-align:right;
+	color:#fff;
+	font-size: 20px !important;
+ }
+.title_slide h1 a{
+	font-size: inherit;
+	color: inherit;
+}
+ .title_slide p{
+	padding-top:5px;
+	padding-right:5px;
+	text-align:right;
+	color:#fff;
+}
+/*end of slider*/
+#main, #container{
+	width:940px;
+	margin: 0 auto;
+}
+/*For footer*/
+#main{
+	padding-bottom: 88px;
+}
+/*---------------------------------------  Sidebar  --------------------------------------------------*/
+#sidebar{
+	width: 302px;
+	float:left;
+	padding: 0 18px 0 0;
+	word-wrap: break-word;
+}
+#sidebar .widget .s{
+	width:140px;
+}
+#sidebar .current-menu-item a{
+	color: inherit !important;
+	background-color: inherit !important;
+
+}
+.widget { 
+	list-style: none outside none;
+	margin-bottom:18px;
+	background-color:#F9F9F9;
+	border: 1px solid #D9D9D9;
+	padding:18px 10px 12px 19px;
+	border-radius: 4px;
+	word-wrap: break-word;
+	hyphens: auto;
+	-moz-hyphens: auto;
+}
+.widget h2{
+	margin-bottom:16px;
+	font-size: 1.1em; /*14px;*/
+	color:#444444;
+	text-transform: uppercase;
+}
+.widget ul, .widget ol {
+	line-height:2em !important;
+	list-style: none outside none !important;
+	padding:0 !important;
+}
+.widget_rss .rsswidget{
+	text-decoration: underline;
+}
+.widget a{
+	color:#686868;
+}
+.widget a:hover{
+	color:#267896 !important;
+}
+.widget-area .widget a:visited {
+	color: #9f9f9f;
+}
+.recentcomments{
+	color:#a6a6a6;
+}
+.widget table{ 
+	width:275px;
+}
+.widget caption{
+	margin-bottom:10px;
+}
+.widget_recent_entries .post-date, .widget_rss .rss-date {
+    color: #AAAAAA;
+    font-size: 0.785714rem;
+ /*   margin-left: 0.857143rem;*/
+}
+.widget-area .widget ul ul {
+    margin-left: 0.857143rem;
+}
+/*end of sidebar*/
+/* ---------------------------------------- Main Content ---------------------------------------------------*/
+#wordpost_content{
+	float:right;
+	width:620px;
+}
+#content{
+	float:right;
+	width:558px; 
+	background-color:#F9F9F9;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+	padding: 24px 30px 10px 29px;
+	margin: 57px 0 26.5px 0;
+}
+/* -------------- style of the post -------------------------*/
+.post, .type-page, .type-attachment {
+	word-wrap: break-word;
+	background-color:#F9F9F9;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+	padding: 24px 30px 10px 29px;
+	margin-bottom: 26.5px;
+
+}
+.sticky{
+
+}
+/*---------- title of the post ------------------*/
+#wordpost_content .entry-title{
+	margin-bottom: 8px !important;
+}
+.entry-content{
+	margin-bottom: 17px;
+}
+.entry-meta{
+	margin-bottom: 15px;
+	color: #A6A6A6;
+}
+.meta-title{
+	color: #267896;
+}
+/*----------- link for tags ----------*/
+.tags_links{
+	margin-top: 38px;
+	margin-bottom: 6px;
+}
+.post p, .comments-area p, .type-page p, .comment-content p, #content p {
+	line-height: 21px;
+	margin-bottom: 16px;
+}
+.post fieldset {
+	line-height:21px;
+}
+.post p.cap-text{
+	margin-bottom: 16px;
+}
+/* --------- images in the posts --------- */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img[class*="align"], img[class*="wp-image-"], img[class*="attachment-"] {
+    height: auto;
+}
+img[class*="attachment-"] {
+	margin: 0 auto;
+	display: block;
+}
+.entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
+    border-radius: 3px 3px 3px 3px;
+}
+img.size-full, img.size-large, img.header-image, img.wp-post-image {
+	height: auto;
+	max-width: 100%;
+}
+.entry-content img, .comment-content img, .widget img {
+	max-width: 100%;
+	margin-bottom: 4px;
+}
+.wp-caption {
+	max-width: 100%;
+/*	padding: 4px;*/
+}
+.wp-caption .wp-caption-text, .gallery-caption, .entry-caption {
+	color: #A6A6A6;
+	font-size: 0.757143rem;
+	font-style: italic;
+	line-height: 2;
+}
+.thumbnail_caption {
+	margin-top:10px;
+	margin-bottom: 17px !important;
+}
+/*---------- the size and spacing between lines --------------*/
+.entry-summary p, .comment-content p, .mu_register p {
+    line-height: 1.71429;
+    margin: 0 0 0.71429rem;
+}
+.post p span, .type-page p span {
+	font-size: 100% !important;
+}
+.post li span, .type-page li span {
+	font-size: 100% !important;
+}
+.entry-meta {
+	line-height: 1.84615;
+}
+.entry-meta h4 {
+    color: #525252;
+}
+.entry-meta h4 a {
+	color: inherit;
+	font-size: inherit;
+}
+.entry-content table, .comment-content table {
+    border-bottom: 1px solid #D9D9D9;
+    line-height: 2;
+    margin: 0 0 1.71429rem;
+    width: 100%;
+}
+.entry-content td, .comment-content td {
+    border-top: 1px solid #D9D9D9;
+    padding: 6px 10px 6px 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+.post ul li span, .type-page ul li span {
+	font-size: 100% !important;
+}
+.post ul li strong, .type-page ul li strong {
+	font-size: 100% !important;
+}
+.post ul li em, .type-page ul li em {
+	font-size: 100% !important;
+}
+.entry-content blockquote, .comment-content blockquote {
+    margin-bottom: 1.71429rem;
+}
+.post hr, .type-page hr{
+	margin-top:24px;
+	margin-bottom:21px;
+	background-color:#e9e9e9;
+	border: 0 none;
+	clear: both;
+	height: 0px;
+}
+/*-------- Header size and margins in the post --------------*/
+.post h1, .entry-content h1{
+	margin-bottom:20px;
+}
+.post h2, .entry-content h2{
+	margin-bottom:20px;
+}
+.post h3, .comments-area h3, .entry-content h4, #content h3{
+	margin-top: 21px;
+	margin-bottom: 23px;
+}
+.post h4, .entry-content h4{
+	margin-bottom: 23px;
+}
+.post h5, .entry-content h5{
+	margin-bottom: 24px;
+}
+.post h6, .entry-content h6{
+	margin-bottom: 33px;
+}
+.post h2 a, .entry-title a{
+	color: inherit;
+	font-size: inherit;
+}
+.top-link{
+	margin-top: 20px;
+	margin-bottom: 17px;
+}
+/*----------- styles of ol ul ------------------*/
+.title_olist{
+	margin-bottom:17px !important;
+}
+.title_ulist{
+	margin:17px 0 19px 0 !important;
+}
+.entry-content ol, .comment-content ol, .entry-content ul, .comment-content ul, .mu_register ul {
+    margin: 0 0 16px;
+}
+.entry-content ul ul, .comment-content ul ul, .entry-content ol ol, .comment-content ol ol, .entry-content ul ol, .comment-content ul ol, .entry-content ol ul, .comment-content ol ul {
+    margin-bottom: 0;
+}
+.post ol, .type-page ol{
+	list-style: decimal outside none;
+	line-height:26px;
+	padding: 0 0 0px 48px;
+}
+.post ol li, .type-page ol li{
+padding-left:3px;
+}
+.post ol ol, .type-page ol ol{
+	padding: 0 0 0px 25px;
+}
+.post ol ul, .type-page ol ul{
+	padding: 0 0 0px 25px;
+}
+.post ul, .type-page ul{
+	list-style: disc outside none;
+	line-height:26px;
+	padding: 0 0 0px 45px;
+}
+.post ul li, .type-page ul li{
+padding-left:5px;
+}
+.post ul ul, .type-page ul ul{
+	padding: 0 0 0px 25px;
+}
+.post ul ol, .type-page ul ol{
+	padding: 0 0 0px 25px;
+}
+.comments-area {
+    margin: 1.71429rem 0;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 1.71429rem;
+    word-wrap: break-word;
+}
+/* --------- links on the next-previous post, the image -------*/
+.nav-previous {
+	float: left;
+	width: 50%;
+	padding-bottom:20px;
+}
+.nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+	padding-bottom:20px;
+}
+.post form, .type-page form{
+/*	padding-top:5px;*/
+}
+.post form h2, .type-page form h2{
+	margin-bottom:11px !important;
+}
+.post label, .comments-area label, .type-page label {
+	display: inline-block;
+	*display:inline;
+	zoom:1;
+	margin-top: 3px;
+	margin-bottom: 10px !important;
+}
+#respond form label {
+	display: block;
+}
+/*------------------------------Text field, the text-area, input password ----------------------------------------------*/
+.post input[type=text], .post input[type="password"], .comments-area input[type="text"], .type-page input[type=text], .type-page input[type="password"] {
+	width:202px;
+	height:49px;
+	background: url("images/bg_text_field.png") no-repeat;
+	border: none;
+	padding: 0 10px 0 10px;
+	margin-bottom: 18px !important;
+}
+.post textarea, .comments-area textarea, .type-page textarea{
+	width:200px !important;
+	height:87px;
+	border: 1px solid #e9e9e9;
+	border-radius: 4px;
+	overflow: auto;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 18px;
+}
+/*-------------------------------------------- stylized Form -------------------------------------------------*/
+.select_form {
+	margin-top:30px;
+}
+.outtaHere {
+	position:absolute;
+	left:-3000px;
+}
+span.left, span.center, .selectArea a, .checkboxArea, .checkboxAreaChecked, .radioArea, .radioAreaChecked, .radiodisabled, .checkboxdisabled {
+	display:inline-block;
+	vertical-align:top;
+}
+/*----------------select-----------------------*/
+.selectArea {
+	width:167px !important;
+	margin: -1px 44px 24px 11px;
+	position:relative;
+	background:url("images/select_center.png") repeat-x;
+}
+a.selectButton, span.left {
+	height:49px;
+	position:absolute;
+	top:0;
+}
+
+span.left {
+	width:11px;
+	left:-11px;
+	background:url("images/select_left.png") no-repeat;
+}
+span.center {
+	line-height:49px;
+	height: 49px;
+	overflow: hidden;
+}
+a.selectButton {
+	width:44px;
+	right:-44px;
+	background:url("images/select_button.png") no-repeat;
+}
+
+/*--------------option-----------------*/
+.optionsDivVisible {
+	margin-left:-11px;
+	margin-top:-3px;
+}
+.select-center {
+	padding:6px 0 10px 0;
+	background:#fff;
+	border:1px solid #e9e9e9;
+	width:220px;
+}
+.select-center a {
+	display:block;
+	padding: 0px 10px 4px 30px;
+	color:#444444 !important;
+}
+.select-center a:hover {
+	color:#ffffff !important;
+}
+.select-center li {
+	list-style: none;
+	cursor: pointer;
+	display: block;
+	color: #444;
+	line-height:26px;
+}
+.select-center li.not_click{
+	color: #d7d7d7  !important;
+	padding: 0px 10px 4px 10px;
+}
+.select-center li:hover {
+	background-color: #267896;
+}
+.select-center li.not_click:hover {
+	background: #fff !important;
+	cursor:default !important;
+}
+.radioArea, .radioAreaChecked, .checkboxArea, .checkboxAreaChecked, .radiodisabled, .checkboxdisabled  {
+/*	position:absolute;
+	margin-left:29px;
+	margin-top: 12px;*/
+	width:18px;
+	margin: 2px 10px 0px 0px;
+}
+/*-------------------------------------checkbox-----------------------------------------*/
+.checkboxArea, .checkboxAreaChecked, .checkboxdisabled {
+	height:18px;
+}
+.checkboxArea {
+	background: url(images/checkboxes.png) 0 0 no-repeat;
+}
+.checkboxAreaChecked {
+	background: url(images/checkboxes.png) 0 0 no-repeat;
+	background-position: 0 -18px;
+}
+.checkboxdisabled {
+	background: url(images/checkboxes.png) no-repeat;
+}
+/*--------------------------------------radio-----------------------------------------*/
+.radioArea, .radioAreaChecked, .radiodisabled {
+	height:18px;
+}
+.radioArea {
+	background: url(images/radio_button.png) no-repeat;
+}
+.radioAreaChecked {
+	background: url(images/radio_button.png) no-repeat;
+	background-position: 0 -18px;
+}
+.radiodisabled {
+	background: url(images/radio_button.png) no-repeat;
+}
+form label {
+	line-height: auto !important;
+}
+.post  .select_form  .customBox {
+	margin-top: 10px !important;
+	margin-bottom: 4px !important;
+	margin-left: 57px;
+}
+/*  ------------------------  File Load ----------------------------------*/
+.file-load-block {
+	margin-top:-1px;
+	width: 460px;
+	height: 70px;
+	overflow: hidden;
+	position: relative;
+	background: #dedede;
+}
+.file-load-block input[type=file] {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	height: 49px;
+	font-size: 600px;
+	z-index: 2;
+	cursor: pointer;
+	width: auto;
+}
+.file-load-block input[type=text] {
+	height: auto;
+	padding: 0;
+	z-index: 1;
+	width: 190px;
+	position: absolute;
+	top: 25px;
+	right:21px;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	font-family:"Open Sans";
+	font-size:13px;
+	border:none;
+	background: transparent;
+}
+.file-load-block button {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 222px;
+	height: 49px;
+	border: none;
+	background: url(images/file_button.png) no-repeat;
+}
+.file-load-block .button-hover {
+	box-shadow: inset 0 0 2px #ccc;
+}
+/*---------------- END	File Load --------------------*/
+/*------------------------------------------------- end stylized Form ------------------------------------------------------------------------*/
+.search_result h2 span {
+	color: #267896;
+}
+/*-----------------------------------buttons ------------------------------------*/
+input[type="submit"] {
+	background: #218BA8;
+	border-bottom: 1px solid #218BA8;
+	border-left: 1px solid #218BA8;
+	border-right: 1px solid #218BA8;
+	border-top: 1px solid #218BA8;
+	border-radius: 4px;
+	color: #FFFFFF;
+	height: 47px;
+	box-sizing: border-box;
+	font-family: Calibri;
+	font-size:13px;
+	cursor: pointer;
+	resize: none;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	word-wrap: break-word;
+	padding: 6px 13px;
+}
+.submit{
+/*	width:83px;*/
+	background: #218BA8;
+	border-bottom: 1px solid #218BA8;
+	border-left: 1px solid #218BA8;
+	border-right: 1px solid #218BA8;
+	border-top: 1px solid #218BA8;
+	border-radius: 4px;
+	color: #FFFFFF;
+	height: 47px;
+	box-sizing: border-box;
+	font-family: Calibri;
+	font-size:13px;
+	cursor: pointer;
+	resize: none;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	word-wrap: break-word;
+	margin-top: 9px; 
+	margin-right: 10px;
+	padding: 6px 13px;
+}
+.reset-form{
+	display: inline;
+}
+.button {
+	background: #f4c656;
+	color: #9a7d38;
+	border-bottom: 1px solid #f4c656;
+	border-left: 1px solid #f4c656;
+	border-right: 1px solid #f4c656;
+	border-top: 1px solid #f4c656;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-family: Calibri;
+	font-size:13px;
+	cursor: pointer;
+	height: 47px;
+	margin-top: 9px; 
+	margin-right: 11px;
+	padding: 6px 13px;
+	resize: none;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	word-wrap: break-word;
+}
+
+/*--------------------------------------------------------- Comments --------------------------------------------------------*/
+.commentlist {
+	padding: 0 0 0 20px !important;
+	list-style: none outside none !important;
+}
+.commentlist .children {
+	list-style: none outside none !important;
+}
+/* Style for author comment*/
+.commentlist .comment-author img {
+	float: left;
+	margin-right: 1.5rem;
+}
+.commentlist .comment-author:after {
+	clear: both;
+}
+.commentlist .comment-author {
+	margin-bottom: 10px;
+}
+.commentlist .comment-author .fn {
+	display: block;
+}
+span.left {
+width:11px;
+left:-11px;
+background:url("images/select_left.png") no-repeat;
+}
+.entry-meta, .tags_links {
+	clear: both;
+}
+.type-page-links {
+	clear: both;
+}
+.entry-content abbr, .comment-content abbr, .entry-content dfn, .comment-content dfn, .entry-content acronym, .comment-content acronym {
+    border-bottom: 1px dotted #666666;
+    cursor: help;
+}
+.entry-content dt, .comment-content dt {
+	margin-left:0 !important;
+}
+.gallery-item a {
+    display: block;
+}
+.gallery-item a, .gallery-caption {
+    width: 90%;
+}
+.nav_post_link{
+	clear:both;
+}
+.nav_post_link a {
+	background: none repeat scroll 0 0 #267896;
+	border-radius: 4px;
+	color: #FFFFFF;
+	padding: 4px 10px;
+}
+.edit-link a{
+	text-decoration:underline;
+	margin-left: 15px;
+}
+/* --------------------------------------------------Aside post format -----------------------------------------------------------------*/
+.aside {
+	border-left: 10px solid #267896;
+	border-right: 10px solid #267896;
+	background: none repeat scroll 0 0  #b0e2ff;
+	padding: 10px;
+	font-size: 15px;
+}
+.aside a {
+	font-size:inherit;
+}
+.format-chat {
+	background: url("images/chat.jpg") no-repeat top right;
+	background-color:#F9F9F9;
+}
+/* -----------------------------------------Link post format ------------------------------------------------------*/
+.format-link .entry-content a {
+    font-size: 20px;
+}
+
+.format-link header {
+    background-color: #267896;
+    border-radius: 3px 3px 3px 3px;
+    color: #fff;
+    float: right;
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+/* --------------------------------------- Status post format -------------------------------------------------------*/
+.entry-header:after {
+    clear: both;
+}
+.format-status .entry-header {
+	margin-bottom: 24px;
+}
+.format-status .entry-header img {
+    float: left;
+    margin-right: 1.5rem;
+}
+.format_status_title {
+	display: inline-block;
+	*display:inline;
+	zoom:1;
+}
+.format-status .entry-header h3 {
+	font-size: 14px;
+	line-height: 2;
+	margin: 0;
+}
+.bypostauthor {
+
+}
+.entry-content embed, .entry-content iframe, .entry-content object, .entry-content video {
+    margin-bottom: 1.71429rem;
+}
+embed, iframe, object, video {
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------- #footer -----------------------------------------------*/
+
+#footer{
+	margin-top: -58px;
+	height: 58px;
+	background-color:#267896;
+}
+#foot_top{
+	width:940px;
+	margin: 0 auto;
+	padding-top:20px;
+}
+#foot_top p{
+	color:#fff;
+	float:left;
+}
+#foot_author{
+	float:right;
+}
+#foot_author p a{
+	color:#f4c656;
+}

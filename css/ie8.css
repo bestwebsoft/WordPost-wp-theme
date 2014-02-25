@@ -1,0 +1,15 @@
+.submit{
+	padding: 0 14px 0;
+}
+#submit{
+	padding: 0 14px 0;
+}
+.button {
+	padding: 0 14px 0;
+}
+.post input[type=text]{
+	padding: 15px 10px 0 10px;
+}
+.file-load-block input[type=text] {
+	top: 10px;
+}

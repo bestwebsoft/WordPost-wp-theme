@@ -1,0 +1,73 @@
+blockquote {
+	zoom:1;
+	*display: inline;/*IE 7*/
+}
+#helper_head {
+	zoom:1;
+	*display: inline;/*IE 7*/
+}
+#Nameblog {
+	zoom:1;
+	*display: inline;/*IE 7*/
+}
+.site-header h3 {
+	position: absolute;
+	top:-5px;
+}
+.site-header h3 a{
+	font-size: 1.1em;
+}
+#navigation {
+	zoom:1;
+	*display: inline;/*IE 7*/
+	float: none;
+}
+#navigation ul {
+	z-index: 1000;
+}
+#navigation ul ul li {
+	float: left;
+}
+#searchsubmit {
+	*top: -17px;/*IE 7*/
+}
+.title_slide h1 a {
+	color: #fff;
+	font-size: 20px;
+}
+.post h2 a, .entry-title a {
+	font-size: 1.2em !important;
+	color: #525252;
+}
+.radio {
+	zoom:1;
+	*display: inline;/*IE 7*/
+	*text-indent: 0px;
+	*padding-left:27px;
+}
+span.left, span.center, .selectArea a, .checkboxArea, .checkboxAreaChecked, .radioArea, .radioAreaChecked, .radiodisabled, .checkboxdisabled {
+	*display:inline;
+	zoom:1;
+}
+.check {
+	zoom:1;
+	*display: inline;/*IE 7*/
+}
+.submit{
+	padding: 0 14px 0;
+	*padding: 0 7px 0;
+}
+.button {
+	padding: 0 14px 0;
+	*padding: 0 7px 0;/*IE 7*/
+}
+#submit{
+	padding: 0 14px 0;
+	*padding: 0 7px 0;
+}
+.post input[type=text]{
+	*padding: 15px 10px 0 10px;	/*IE 7*/
+}
+input[type="submit"] {
+	top: -34px;
+}
