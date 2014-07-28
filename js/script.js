@@ -25,7 +25,9 @@
 			});
 		});
 		/* Call stylized input file */
-		$('input:file').customInpfile();
+		if (!($.browser.msie && parseFloat($.browser.version)<7)){
+			$('input:file').customInpfile();
+		}
 		/*A semi-transparent resource description in the header (description)*/
 		$('.site-title span').animate({ opacity: 0.5 });
 		$('#slider-wrap').Slider();

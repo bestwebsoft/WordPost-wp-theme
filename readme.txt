@@ -1,13 +1,24 @@
 ﻿=== Wordpost ===
 Contributors: the BestWebSoft team
-Tags: white, blue, two-column, fixed-width, slide show, a stylized form of input, custom background, custom header, translation-ready.
+Tags: white, blue, two-column, fixed-layout, slide show, a stylized form of input, custom background, custom header, translation-ready.
 Requires at least: 3.3
-Tested up to: 3.8
-Stable tag: 1.0.3
-Description: wordpost - theme for Wordpress, which is simple to install and use solution for your website. Can be used for a variety of thematic resources with a custom slide show that will attract visitors.
+Tested up to: 3.9.1
+Stable tag: 1.0.4
 License:  GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
- Copyrights for Resources used in this theme.
+
+== Description ==
+
+Wordpost is a great theme for anyone who wants to give their website a professional and clean look. Its goal is to create something  similar to our other business-oriented themes, but with a crisper and simpler interface. Wordpost will create a truly unique experience that is sure to grab attention of your visitors. It will give you a new way for displaying your content. The Theme has a simplistic and sharp design which was created for an intuitive user experience. Modern design of Wordpost ensures that your posts will always be displayed in the best way for the resolution of your visitor's screen. It will surely give your blog that unique visual impact you have been looking for. See for yourself - take a look at the demo version of WordPost at http://bestwebsoft.com/wordpress_demo_theme/wordpost/
+
+== Translation ==
+
+* Russian (ru_RU)
+
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>
+
+== Copyrights for Resources used in this theme == 
+
 1. In Wordpost Theme used 2 External fonts from Google Webfonts: 
    	- Open Sans - http://www.google.com/fonts/specimen/Open+Sans
 	  License: Apache License Version 2.0
@@ -26,9 +37,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	  License:  GNU General Public License v2 or later
 	  Copyright: the Bestwebsoft team, https://github.com/bestwebsoft
 
-== Description ==
-
-Wordpost - theme for Wordpress, which is simple to install and use solution for your website. Can be used for a variety of thematic resources with a custom slide show that will attract visitors.
+Everything else used in this theme has been created by BestWebSoft, especially for the Wordpost theme and is distributed under GPL license.
 
 == Installation ==
 
@@ -45,7 +54,7 @@ Installation using the "Add New Theme"
 Activiation
 Activate the theme through the menu 'Themes' in WordPress
 
-= Theme Notes =
+== Theme Notes ==
 
 - Slides
 
@@ -79,6 +88,10 @@ Download the desired image and make it the featured image. The required size of 
 
 == Changelog ==
 
+= V1.0.4 - 14.07.2014=
+* Changed : IE6, IE7 bugs were fixed.
+* Update: We checked theme for WordPress 3.9.1.
+
 = V1.0.3 - 24.12.2013=
 * Changed : Fixed css-style for widget "Resent posts", comments, height between header and content without slider.
 * Changed : Fixed function for breadcrumbs.
@@ -97,7 +110,10 @@ Download the desired image and make it the featured image. The required size of 
 
 == Upgrade Notice ==
 
-= V1.0.3 - 24.12.2013=
+= V1.0.4 =
+IE6, IE7 bugs were fixed. We checked theme for WordPress 3.9.1.
+
+= V1.0.3 =
 Fixed css-style for widget "Resent posts", comments, height between header and content without slider. Fixed function for breadcrumbs. Fixed position of footer.
 
 = V1.0.2 =
@@ -113,4 +129,3 @@ Updated functionality for menu items.
 
 You can use our contact form, for any support questions:
 http://bestwebsoft.com/contacts/contact/
-

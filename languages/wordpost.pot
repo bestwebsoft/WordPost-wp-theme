@@ -1,0 +1,319 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpost\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-07-15 11:24+0300\n"
+"PO-Revision-Date: 2014-07-15 11:26+0300\n"
+"Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
+"Language-Team: the BestWebSoft team <info@bestwebsoft.com>\n"
+"Language: russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: post_format-page.php:17
+#: post_format-link.php:15
+#: post_format-quote.php:15
+#: post_format-aside.php:17
+#: post_format-image.php:15
+#: image.php:22
+#: functions.php:218
+msgid "Edit"
+msgstr ""
+
+#: post_format-link.php:9
+msgid "Link"
+msgstr ""
+
+#: post_format-link.php:19
+#: post_format-quote.php:19
+#: post_format-aside.php:21
+#: post_format-image.php:19
+msgid "Top"
+msgstr ""
+
+#: post_format-none.php:8
+#: index.php:33
+msgid "Nothing Found"
+msgstr ""
+
+#: post_format-none.php:10
+#: index.php:35
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr ""
+
+#: archive.php:13
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:15
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:17
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:19
+#, php-format
+msgid "Archive of the tags: %s"
+msgstr ""
+
+#: archive.php:30
+#: index.php:22
+msgid "&laquo; Older posts "
+msgstr ""
+
+#: archive.php:31
+#: index.php:23
+msgid "Newer posts &raquo;"
+msgstr ""
+
+#: footer.php:18
+msgid " Powered by "
+msgstr ""
+
+#: image.php:15
+msgid "Posted on&nbsp"
+msgstr ""
+
+#: image.php:19
+msgid " Size of image&nbsp"
+msgstr ""
+
+#: image.php:24
+msgid "&larr; Previous"
+msgstr ""
+
+#: image.php:25
+msgid "Next &rarr;"
+msgstr ""
+
+#: functions.php:8
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:88
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:90
+msgid "This sidebar is located to the left of content"
+msgstr ""
+
+#: functions.php:97
+#: functions.php:124
+msgid "Home"
+msgstr ""
+
+#: functions.php:111
+msgid "Search Results"
+msgstr ""
+
+#: functions.php:113
+msgid "Page not found"
+msgstr ""
+
+#: functions.php:116
+msgid "tag"
+msgstr ""
+
+#: functions.php:118
+#: functions.php:120
+msgid "archive"
+msgstr ""
+
+#: functions.php:159
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:194
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:194
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:205
+msgid "Post author"
+msgstr ""
+
+#: functions.php:210
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:214
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:221
+msgid "Reply"
+msgstr ""
+
+#: functions.php:230
+msgid "Posted on"
+msgstr ""
+
+#: functions.php:230
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: functions.php:235
+msgid "in"
+msgstr ""
+
+#: functions.php:258
+msgid "Title of the slide"
+msgstr ""
+
+#: functions.php:262
+msgid "URL-link for title"
+msgstr ""
+
+#: functions.php:266
+msgid "Description the slide"
+msgstr ""
+
+#: functions.php:276
+msgid "Display the current post in the slider"
+msgstr ""
+
+#: functions.php:287
+msgid "If the size of the picture in the slider you are not satisfied ,download the desired image and make it the featured image. The required size of the image - not less then 940px at 327px"
+msgstr ""
+
+#: functions.php:288
+msgid "Make the slide"
+msgstr ""
+
+#: header.php:48
+msgid "Welcome to our blog!"
+msgstr ""
+
+#: searchform.php:11
+msgid "Enter search keyword"
+msgstr ""
+
+#: searchform.php:14
+msgid "Search"
+msgstr ""
+
+#: index.php:28
+msgid "No posts to display"
+msgstr ""
+
+#: index.php:30
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+
+#: search.php:13
+msgid "You searched for "
+msgstr ""
+
+#: search.php:15
+msgid "Here is the results:"
+msgstr ""
+
+#: search.php:31
+msgid "Sorry, but nothing matched your search keywords."
+msgstr ""
+
+#: category.php:12
+#, php-format
+msgid "Archive of the categories: %s"
+msgstr ""
+
+#: comments.php:14
+msgid "One thought on &ldquo;"
+msgstr ""
+
+#: comments.php:16
+msgid "&nbsp;thoughts on &ldquo;"
+msgstr ""
+
+#: 404.php:13
+msgid "There is no such page on this address."
+msgstr ""
+
+#~ msgid "slides"
+#~ msgstr "слайды"
+
+#~ msgid "slide"
+#~ msgstr "слайд"
+
+#~ msgid "Add New"
+#~ msgstr "Добавить Новый"
+
+#~ msgid "Add New Slide"
+#~ msgstr "Добавить новый Слайд"
+
+#~ msgid "Edit Slide"
+#~ msgstr "Редактировать Слайд"
+
+#~ msgid "New Slide"
+#~ msgstr "Новый Слайд"
+
+#~ msgid "All Slides"
+#~ msgstr "Все слайды"
+
+#~ msgid "View Slide"
+#~ msgstr "Посмотреть слайд"
+
+#~ msgid "Search Slides"
+#~ msgstr "Поиск Слайдов"
+
+#~ msgid "No Slides found"
+#~ msgstr "Слайды не найдены"
+
+#~ msgid "No Slides found in Trash"
+#~ msgstr "Нет слайдов в Trash"
+
+#~ msgid "Slides"
+#~ msgstr "Слайды"
+
+#~ msgid "Option of slides"
+#~ msgstr "Опции слайдов"
+
+#~ msgid "URL"
+#~ msgstr "URL-адрес"
+
+#~ msgid ""
+#~ "Link, which will be made a transition when you click on the title of slide"
+#~ msgstr ""
+#~ "Ссылка, на которую будет совершен переход при нажатии на заголовок слайда"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid ""
+#~ "Link, which will be made ​​a transition when you click on the title slide"
+#~ msgstr ""
+#~ "Ссылка, на которую будет совершен переход при нажатии на заголовок слайда"
+
+#~ msgid " and "
+#~ msgstr " и "
+
+#~ msgid "Posted on "
+#~ msgstr "Опубликовано"
+
+#~ msgid "Currently browsing tag: %s"
+#~ msgstr "Просматриваемая в данный момент метка: %s"
+
+#~ msgid "Category: %s"
+#~ msgstr "Категории: %s"
+
+#~ msgid "Blog Archives"
+#~ msgstr "Архивы Блога"

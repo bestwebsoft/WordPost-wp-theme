@@ -132,8 +132,10 @@ function wordpost_scripts_method() {
 	wp_enqueue_style( 'wordpost-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'wordpost-style-fonts', get_stylesheet_directory_uri() . '/fonts/fontstyle.css' );
 	// Connect specific styles for IE versions using conditional comments
+	wp_enqueue_style( 'wordpost-ie6', get_template_directory_uri() . '/css/ie6.css', array( 'wordpost-style' ), '1.0.0' );
 	wp_enqueue_style( 'wordpost-ie7', get_template_directory_uri() . '/css/ie.css', array( 'wordpost-style' ), '1.0.0' );
 	wp_enqueue_style( 'wordpost-ie8', get_template_directory_uri() . '/css/ie8.css', array( 'wordpost-style' ), '1.0.0' );
+	$wp_styles->add_data( 'wordpost-ie6', 'conditional', 'IE 6' );
 	$wp_styles->add_data( 'wordpost-ie7', 'conditional', 'IE 7' );
 	$wp_styles->add_data( 'wordpost-ie8', 'conditional', 'IE 8' );
 	// Connect with font style file
@@ -335,4 +337,3 @@ add_filter( 'wp_title', 'wordpost_wp_title', 10, 2 );
 add_action( 'admin_enqueue_scripts', 'wordpost_admin_script' );
 add_action( 'add_meta_boxes', 'wordpost_add_slide_metabox' );
 add_action( 'save_post', 'wordpost_slide_meta_save');
-?>

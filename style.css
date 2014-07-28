@@ -1,11 +1,11 @@
 /*
 Theme Name: Wordpost
 Theme URI: http://bestwebsoft.com/theme/wordpost/
-Description: Theme for Wordpress, which is simple to install and use solution for your website. Can be used for a variety of thematic resources with a custom slide show that will attract visitors.
+Description: Wordpost is a great theme for anyone who wants to give their website a professional and clean look. Its goal is to create something similar to our other business-oriented themes, but with a crisper and simpler interface. Wordpost will create a truly unique experience that is sure to grab attention of your visitors. It will give you a new way for displaying your content. The Theme has a simplistic and sharp design which was created for an intuitive user experience. Modern design of Wordpost ensures that your posts will always be displayed in the best way for the resolution of your visitor's screen. It will surely give your blog that unique visual impact you have been looking for. See for yourself - take a look at the demo version of WordPost at http://bestwebsoft.com/wordpress_demo_theme/wordpost/
 Author: the BestWebSoft team
 Author URI: https://github.com/bestwebsoft
-Version: 1.0.3
-Tags: white, blue, two-columns, fixed-width
+Version: 1.0.4
+Tags: white, blue, two-columns, fixed-layout
 Text Domain: wordpost
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
@@ -917,7 +917,9 @@ form label {
 	color: #267896;
 }
 /*-----------------------------------buttons ------------------------------------*/
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
 	background: #218BA8;
 	border-bottom: 1px solid #218BA8;
 	border-left: 1px solid #218BA8;

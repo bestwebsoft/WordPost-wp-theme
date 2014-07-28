@@ -13,3 +13,14 @@
 .file-load-block input[type=text] {
 	top: 10px;
 }
+.entry-content img {
+	width: auto; 
+	max-width: 560px;
+	height: auto; 
+}
+.wp-caption {
+	width: 559px !important;
+	max-height: auto !important;
+    margin-bottom: 4px;
+    margin-right: 0 !important;
+}

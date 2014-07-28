@@ -9,6 +9,9 @@ blockquote {
 #Nameblog {
 	zoom:1;
 	*display: inline;/*IE 7*/
+	float: left;
+	margin-top: 22px !important;
+	width: 300px !important;
 }
 .site-header h3 {
 	position: absolute;
@@ -18,9 +21,10 @@ blockquote {
 	font-size: 1.1em;
 }
 #navigation {
+	width: 520px;
 	zoom:1;
 	*display: inline;/*IE 7*/
-	float: none;
+	float: right;
 }
 #navigation ul {
 	z-index: 1000;
@@ -70,4 +74,41 @@ span.left, span.center, .selectArea a, .checkboxArea, .checkboxAreaChecked, .rad
 }
 input[type="submit"] {
 	top: -34px;
+}
+
+#sidebar .widget .s {
+    width: 130px;
+}
+.entry-content img {
+    max-width: 559px !important;
+	height: auto !important;
+}
+
+.tags_links {
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.fileload input[type="text"] {
+	margin-top: 0px !important;
+	padding-top: 0px !important;
+}
+
+#cntctfrm_contact_form input[type="submit"], 
+#cntctfrm_contact_form input[type="button"] {
+	margin-top: 34px !important;
+}
+
+.fileLoad input[type="text"] {
+	margin: 0 !important;
+	padding: 0 !important;
+	word-wrap: break-word;
+}
+
+.cptch_block input[type="text"] {
+	zoom:1;
+	display: inline;
+	behavior:url(../css/PIE.htc);
+	vertical-align: middle; 
+  	text-align: center; 
 }
