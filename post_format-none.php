@@ -2,8 +2,8 @@
 /**
  * The template for displaying posts in the Status post format
  * @subpackage wordpost
- * @since wordpost
- */?>
+ * @since      wordpost
+ */ ?>
 <div id="post-0" class="post no-results not-found">
 	<h2 class="entry-title"><?php _e( 'Nothing Found', 'wordpost' ); ?></h2>
 	<div class="entry-content">

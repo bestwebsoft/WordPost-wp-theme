@@ -1,26 +1,29 @@
 ﻿=== Wordpost ===
-Contributors: the BestWebSoft team
-Tags: white, blue, two-column, fixed-layout, slide show, a stylized form of input, custom background, custom header, translation-ready.
-Requires at least: 3.3
-Tested up to: 3.9.1
-Stable tag: 1.0.4
-License:  GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: BestWebLayout, BestWebSoft
+Author URI: http://bestweblayout.com/
+Tags: two-columns, left-sidebar, custom-background, custom-header, custom-menu, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
+Requires at least: 4.2
+Tested up to: 4.5.2
+Stable tag: 1.1
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+Wordpost WordPress Theme, Copyright 2016 BestWebLayout.com
+Theme Wordpost is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Wordpost is a great theme for anyone who wants to give their website a professional and clean look. Its goal is to create something  similar to our other business-oriented themes, but with a crisper and simpler interface. Wordpost will create a truly unique experience that is sure to grab attention of your visitors. It will give you a new way for displaying your content. The Theme has a simplistic and sharp design which was created for an intuitive user experience. Modern design of Wordpost ensures that your posts will always be displayed in the best way for the resolution of your visitor's screen. It will surely give your blog that unique visual impact you have been looking for. See for yourself - take a look at the demo version of WordPost at http://bestwebsoft.com/wordpress_demo_theme/wordpost/
+Wordpost is a great theme for anyone who wants to give their website a professional and clean look. Its goal is to create something  similar to our other business-oriented themes, but with a crisper and simpler interface. Wordpost will create a truly unique experience that is sure to grab attention of your visitors. It will give you a new way for displaying your content. The Theme has a simplistic and sharp design which was created for an intuitive user experience. Modern design of Wordpost ensures that your posts will always be displayed in the best way for the resolution of your visitor's screen. It will surely give your blog that unique visual impact you have been looking for. See for yourself - take a look at the demo version of WordPost at http://wp-demo-theme.bestweblayout.com/wordpost/
 
 == Translation ==
 
 * Russian (ru_RU)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestweblayout.com" target="_blank">BestWebLayout</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>
 
 == Copyrights for Resources used in this theme == 
 
 1. In Wordpost Theme used 2 External fonts from Google Webfonts: 
-   	- Open Sans - http://www.google.com/fonts/specimen/Open+Sans
+	- Open Sans - http://www.google.com/fonts/specimen/Open+Sans
 	  License: Apache License Version 2.0
 	  Copyright: Steve Matteson, https://profiles.google.com/107777320916704234605/about
 	- PT Sans - http://www.google.com/fonts/specimen/PT+Sans
@@ -47,7 +50,7 @@ Manual Installation
 
 Installation using the "Add New Theme"
 
-1. In the Wordpress admin panel, select Themes -> Add New
+1. In the WordPress admin panel, select Themes -> Add New
 2. Search for `wordpost`
 3. Press the `Install`
 
@@ -58,11 +61,11 @@ Activate the theme through the menu 'Themes' in WordPress
 
 - Slides
 
-When you install theme in the Wordpress admin panel menu in the post editing is metabox with the ability to display the post in the slider on the home page ( that appear between Header and the main content of a site ), with title,description and link.
+When you install theme in the WordPress admin panel menu in the post editing is metabox with the ability to display the post in the slider on the home page ( that appear between Header and the main content of a site ), with title,description and link.
 
 - Widgets
 
-Subject contains the standard widgets Wordpress
+Subject contains the standard widgets WordPress
 
 - Styled form
 
@@ -88,6 +91,14 @@ Download the desired image and make it the featured image. The required size of 
 
 == Changelog ==
 
+= V1.1 - 15.06.2016 =
+* New:    The 'title-tag' theme support was added.
+* Bugfix: Fixed mismatch coding standards.
+* Bugfix: Fixed theme styles.
+* Update: Screenshot was updated to size 1200x900.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.2.
+* Update: Theme was transferred to new WordPress account.
+
 = V1.0.4 - 14.07.2014=
 * Changed : IE6, IE7 bugs were fixed.
 * Update: We checked theme for WordPress 3.9.1.
@@ -109,6 +120,9 @@ Download the desired image and make it the featured image. The required size of 
 * Update : Updated functionality for menu items.
 
 == Upgrade Notice ==
+
+= v1.1 =
+The 'title-tag' theme support was added. Fixed mismatch coding standards. Fixed theme styles. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.2. Theme was transferred to new WordPress account.
 
 = V1.0.4 =
 IE6, IE7 bugs were fixed. We checked theme for WordPress 3.9.1.

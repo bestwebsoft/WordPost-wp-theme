@@ -38,18 +38,18 @@
 	/* Menu current item - arrow*/
 	$.fn.menuArrowCur = function(){
 		var ArrowStructure = '<span class="current-item-arrow"></span>';
-		var ArrovImg = '<img class="current-item-arrow" src="/wp-content/themes/wordpost/images/nav_arrow.png"/>';
+		var ArrovImg = '<div class="current-item-arrow"></div>';
 		var width_li = $('.current-menu-item').width();
 		$('#navigation .current-menu-item').append(ArrovImg);
 		$('.current-item-arrow').css({'right':width_li/2});
-	}
+	};
 	$.fn.menuArrowCurpage = function(){
 		var ArrowStructurep = '<span class="current-item-arrow"></span>';
-		var ArrovImgp = '<img class="current-item-arrow" src="/wp-content/themes/wordpost/images/nav_arrow.png"/>';
+		var ArrovImgp = '<div class="current-item-arrow"></div>';
 		var width_lip = $('.current_page_item').width();
 		$('#navigation .current_page_item').append(ArrovImgp);
 		$('.current-item-arrow').css({'right':width_lip/2});
-	}
+	};
 	/* custom input file module */
 	$.fn.customInpfile = function(){
 		var InpfileStructure = '<div class="fileLoad"><button></button><input type="text" value="File is not selected." /></div>';
@@ -60,11 +60,12 @@
 		/* track the change INPUT file */
 		$('input:file').change(function(){
 		/* If the file is attached skid value into a variable */
-			var fileResult = $(this).val();
+			var fileResult = $( this )[ 0 ].files[ 0 ][ 'name' ];
 			/* And then pass the value to the INPUT which is under the boot */
 			$(this).parent().find('.fileLoad').find('input').val(fileResult);
+			alert( fileResult);
 		});
-	}
+	};
 	/* custom checkboxes module */
 	$.fn.customCheckbox = function(_options){
 		var _options = jQuery.extend({
@@ -107,7 +108,7 @@
 			else if(_this.is(':disabled')) _this.get(0);
 			else _this.get(0)._replaced.removeClass().addClass(_options.checkboxDefault);
 		}
-	}
+	};
 
 	/* custom radios module */
 	$.fn.customRadio = function(_options){
@@ -153,7 +154,7 @@
 			});
 			_this._replaced.removeClass().addClass(_options.radioChecked);
 		}
-	}
+	};
 
 	/* custom selects module */
 	$.fn.customSelect = function(_options) {
@@ -187,7 +188,7 @@
 						if (jQuery(this).is('optgroup')) {
 							var selOptgroup = jQuery(this);
 							var _optgroup = jQuery('<li class="not_click">' + selOptgroup.attr("label") + '</li>');
-							optList.append(_optgroup);						
+							optList.append(_optgroup);
 							}
 						if (jQuery(this).is('option')) {
 							var selOpt = jQuery(this);
@@ -208,7 +209,7 @@
 								optHolder.hide();
 								return false;
 							});
-							optList.append(_opt);   
+							optList.append(_opt);
 						}
 					});
 
@@ -261,7 +262,7 @@
 				}
 			}
 		});
-	}
+	};
 			/*----------------------- Slider ---------------------*/
 	$.fn.Slider = function() {
 		var hwSlideSpeed = 700; /*Speed ​​slide transition animations*/
@@ -291,13 +292,13 @@
 				$('.slide').eq(slideNum).fadeIn(hwSlideSpeed, rotator);
 				$(".control-slide.active").removeClass("active");
 				$('.control-slide').eq(slideNum).addClass('active');
-			}
+			};
 			if(hwNeedLinks){
-				var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href="#">&gt;</a>').prependTo('#slider');		
+				var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href="#">&gt;</a>').prependTo('#slider');
 				$('#nextbutton').click(function(){
 					animSlide("next");
 					return false;
-				})
+				});
 				$('#prewbutton').click(function(){
 					animSlide("prew");
 					return false;
@@ -316,17 +317,17 @@
 			var pause = false;
 			var rotator = function(){
 				if(!pause){slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);}
-			}
-			$('#slider-wrap').hover(	
+			};
+			$('#slider-wrap').hover(
 				function(){clearTimeout(slideTime); pause = true;},
 				function(){pause = false; rotator();
 			});
 			rotator();
-	}
+	};
 	/* event handler on DOM ready */
 	var _activeDrop;
 	$(function(){
-		$('body').click(hideOptionsClick)
+		$('body').click(hideOptionsClick);
 		$(window).resize(hideOptions)
 	});
 	function hideOptions() {

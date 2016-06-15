@@ -2,24 +2,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wordpost\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-09 11:10+0300\n"
-"PO-Revision-Date: 2014-07-15 11:23+0300\n"
+"POT-Creation-Date: 2016-06-15 17:58+0300\n"
+"PO-Revision-Date: 2016-06-15 18:06+0300\n"
 "Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
 "Language-Team: the BestWebSoft team <info@bestwebsoft.com>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: russian\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-KeywordsList: __;_e;_n;_x\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:12
-#: index.php:33
-#: post_format-none.php:8
-#: search.php:30
+#: 404.php:12 index.php:36 post_format-none.php:8 search.php:30
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
 
@@ -27,94 +24,82 @@ msgstr "Ничего не найдено"
 msgid "There is no such page on this address."
 msgstr "Страницы с таким адресом не существует"
 
-#: index.php:22
-#: search.php:25
+#: archive.php:14
+#, php-format
+msgid "Daily Archives: %s"
+msgstr "Архив за день: %s"
+
+#: archive.php:16
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr "Архив за месяц: %s"
+
+#: archive.php:18
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr "Архив за год: %s"
+
+#: archive.php:20
+#, php-format
+msgid "Archive of the tags: %s"
+msgstr "Архив меток: %s"
+
+#: archive.php:31 category.php:26 index.php:23 search.php:25
 msgid "&laquo; Older posts "
 msgstr "&laquo; Ранние посты "
 
-#: index.php:23
-#: search.php:26
+#: archive.php:32 category.php:27 index.php:24 search.php:26
 msgid "Newer posts &raquo;"
 msgstr "Новые посты &raquo; "
 
-#: index.php:28
-msgid "No posts to display"
-msgstr "Нет сообщений для отображения"
-
-#: index.php:30
+#: category.php:13
 #, php-format
-msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
-msgstr "Вы действительно хотите опубликовать Ваше первое сообщение? <a href=\"%s\"> Начните отсюда </a>."
+msgid "Archive of the categories: %s"
+msgstr "Архив категорий: %s"
 
-#: index.php:35
-#: post_format-none.php:10
-msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
-msgstr "Извините, но по Вашему запросу нет результатов. Возможно, поиск поможет найти соответствующий пост."
-
-#: post_format-aside.php:17
-#: post_format-page.php:17
-#: functions.php:214
-#: post_format-image.php:15
-#: post_format-quote.php:15
-#: post_format-link.php:15
-#: post_format-status.php:21
-msgid "Edit"
-msgstr "Редактировать"
-
-#: post_format-aside.php:21
-#: post_format-image.php:19
-#: post_format-quote.php:19
-#: post_format-link.php:19
-#: post_format-status.php:25
-msgid "Top"
-msgstr "Вверх"
-
-#: comments.php:14
+#: comments.php:15
 msgid "One thought on &ldquo;"
 msgstr "Один комментарий в &ldquo;"
 
-#: comments.php:16
+#: comments.php:17
 msgid "&nbsp;thoughts on &ldquo;"
 msgstr "&nbsp; - количество комментариев в &ldquo;"
 
-#: functions.php:8
+#: footer.php:18
+msgid " Powered by "
+msgstr "Создано "
+
+#: functions.php:9
 msgid "Primary Menu"
 msgstr "Главное Меню"
 
-#: functions.php:88
+#: functions.php:98
 msgid "Sidebar"
 msgstr "Сайдбар"
 
-#: functions.php:90
+#: functions.php:100
 msgid "This sidebar is located to the left of content"
 msgstr "Этот сайдбар расположен слева от основного контента"
 
-#: functions.php:97
-#: functions.php:122
+#: functions.php:107 functions.php:133
 msgid "Home"
 msgstr "Главная"
 
-#: functions.php:110
+#: functions.php:121
 msgid "Search Results"
 msgstr "Результаты поиска"
 
-#: functions.php:112
+#: functions.php:123
 msgid "Page not found"
 msgstr "Страница не найдена"
 
-#: functions.php:114
+#: functions.php:126
 msgid "tag"
 msgstr "тег"
 
-#: functions.php:116
-#: functions.php:118
+#: functions.php:128 functions.php:130
 msgid "archive"
 msgstr "архив"
-
-#: functions.php:155
-#, php-format
-msgid "Page %s"
-msgstr "Страница %s"
 
 #: functions.php:190
 msgid "Pingback:"
@@ -124,93 +109,75 @@ msgstr "Ответ:"
 msgid "(Edit)"
 msgstr "(Редактировать)"
 
-#: functions.php:201
+#: functions.php:200
 msgid "Post author"
 msgstr "Автор поста"
 
-#: functions.php:206
+#: functions.php:205
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s в %2$s"
 
-#: functions.php:210
+#: functions.php:209
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает модерацию."
+
+#: functions.php:213 image.php:22 post_format-aside.php:17
+#: post_format-image.php:15 post_format-link.php:15 post_format-page.php:17
+#: post_format-quote.php:15 post_format-status.php:21 post_format.php:24
+msgid "Edit"
+msgstr "Редактировать"
 
 #: functions.php:217
 msgid "Reply"
 msgstr "Ответить"
 
-#: functions.php:226
+#: functions.php:230
 msgid "Posted on"
 msgstr "Опубликовано "
 
-#: functions.php:226
-#: post_format-status.php:13
+#: functions.php:230 post_format-status.php:13
 #, php-format
 msgid "Permalink to %s"
 msgstr "Ссылка на  %s"
 
-#: functions.php:231
+#: functions.php:235
 msgid "in"
 msgstr "в"
 
-#: functions.php:254
+#: functions.php:259
 msgid "Title of the slide"
 msgstr "Название слайда"
 
-#: functions.php:258
+#: functions.php:263
 msgid "URL-link for title"
 msgstr "URL-ссылка для названия "
 
-#: functions.php:262
+#: functions.php:267
 msgid "Description the slide"
 msgstr "Описание слайда "
 
-#: functions.php:272
+#: functions.php:278
 msgid "Display the current post in the slider"
 msgstr "Отобразить данный пост в слайдере"
 
-#: functions.php:283
-msgid "If the size of the picture in the slider you are not satisfied ,download the desired image and make it the featured image. The required size of the image - not less then 940px at 327px"
-msgstr "Если размер картинки в слайдере вас не устраивает, заново загрузите нужную картинку и сделайте ее featured image. Требуемый размер картинки - не меньше 940px на 327px"
+#: functions.php:289
+msgid ""
+"If the size of the picture in the slider you are not satisfied ,download the "
+"desired image and make it the featured image. The required size of the image "
+"- not less then 940px at 327px"
+msgstr ""
+"Если размер картинки в слайдере вас не устраивает, заново загрузите нужную "
+"картинку и сделайте ее featured image. Требуемый размер картинки - не меньше "
+"940px на 327px"
 
-#: functions.php:284
+#: functions.php:290
 msgid "Make the slide"
 msgstr "Сделать слайдом"
 
-#: footer.php:17
-msgid " Powered by "
-msgstr "Создано "
-
-#: search.php:13
-msgid "You searched for "
-msgstr "Вы искали "
-
-#: search.php:15
-msgid "Here is the results:"
-msgstr "Вот результат поиска:"
-
-#: search.php:31
-msgid "Sorry, but nothing matched your search keywords."
-msgstr "Извините, но ничего не соответствуют вашим ключевым словам поиска."
-
-#: post_format-link.php:9
-msgid "Link"
-msgstr "Ссылка"
-
-#: searchform.php:11
-msgid "Enter search keyword"
-msgstr "Введите ключевое слово"
-
-#: searchform.php:14
-msgid "Search"
-msgstr "Поиск"
-
-#: category.php:12
-#, php-format
-msgid "Archive of the categories: %s"
-msgstr "Архив категорий: %s"
+#: header.php:49
+msgid "Welcome to our blog!"
+msgstr "Добро пожаловать!"
 
 #: image.php:15
 msgid "Posted on&nbsp"
@@ -228,29 +195,56 @@ msgstr "&larr; Предыдущий"
 msgid "Next &rarr;"
 msgstr "Следующий &rarr;"
 
-#: archive.php:13
-#, php-format
-msgid "Daily Archives: <span>%s</span>"
-msgstr "Архивы за день: <span>%s</span>"
+#: index.php:29
+msgid "No posts to display"
+msgstr "Нет сообщений для отображения"
 
-#: archive.php:15
-#, php-format
-msgid "Monthly Archives: <span>%s</span>"
-msgstr "Архивы за месяц: <span>%s</span>"
+#: index.php:31
+msgid "Ready to publish your first post?"
+msgstr "Готовы опубликовать первую запись?"
 
-#: archive.php:17
-#, php-format
-msgid "Yearly Archives: <span>%s</span>"
-msgstr "Архивы за год: <span>%s</span>"
+#: index.php:32
+msgid "Get started here"
+msgstr "Начните отсюда"
 
-#: archive.php:19
-#, php-format
-msgid "Archive of the tags: %s"
-msgstr "Архив меток: %s"
+#: index.php:38 post_format-none.php:10
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+"Извините, но по Вашему запросу нет результатов. Возможно, поиск поможет "
+"найти соответствующий пост."
 
-#: header.php:48
-msgid "Welcome to our blog!"
-msgstr "Добро пожаловать!"
+#: post_format-aside.php:21 post_format-image.php:19 post_format-link.php:19
+#: post_format-quote.php:19 post_format-status.php:25 post_format.php:29
+msgid "Top"
+msgstr "Вверх"
+
+#: post_format-link.php:9
+msgid "Link"
+msgstr "Ссылка"
+
+#: search.php:13
+msgid "You searched for "
+msgstr "Вы искали "
+
+#: search.php:15
+msgid "Here is the results:"
+msgstr "Вот результат поиска:"
+
+#: search.php:31
+msgid "Sorry, but nothing matched your search keywords."
+msgstr "Извините, но ничего не соответствуют вашим ключевым словам поиска."
+
+#: searchform.php:16
+msgid "Search"
+msgstr "Поиск"
+
+#~ msgid "Page %s"
+#~ msgstr "Страница %s"
+
+#~ msgid "Enter search keyword"
+#~ msgstr "Введите ключевое слово"
 
 #~ msgid "slides"
 #~ msgstr "слайды"
