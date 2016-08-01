@@ -63,7 +63,6 @@
 			var fileResult = $( this )[ 0 ].files[ 0 ][ 'name' ];
 			/* And then pass the value to the INPUT which is under the boot */
 			$(this).parent().find('.fileLoad').find('input').val(fileResult);
-			alert( fileResult);
 		});
 	};
 	/* custom checkboxes module */

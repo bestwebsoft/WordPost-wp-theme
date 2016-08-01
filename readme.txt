@@ -1,10 +1,11 @@
 ﻿=== Wordpost ===
 Contributors: BestWebLayout, BestWebSoft
 Author URI: http://bestweblayout.com/
+Donate link: http://bestwebsoft.com/donate/
 Tags: two-columns, left-sidebar, custom-background, custom-header, custom-menu, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.2
-Tested up to: 4.5.2
-Stable tag: 1.1
+Tested up to: 4.5.3
+Stable tag: 1.2
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Wordpost WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -54,7 +55,7 @@ Installation using the "Add New Theme"
 2. Search for `wordpost`
 3. Press the `Install`
 
-Activiation
+Activation
 Activate the theme through the menu 'Themes' in WordPress
 
 == Theme Notes ==
@@ -71,7 +72,7 @@ Subject contains the standard widgets WordPress
 
 Theme changes the default radio buttons, checkboxes, text input field, select menu (select) using standard tag html.
 
-- Custom bachground, header
+- Custom background, header
 
 The user can choose a background that is different from the standard white, and add additional image in the header of your site and change the color of the title.
 
@@ -90,6 +91,10 @@ Download the desired image and make it the featured image. The required size of 
 1. Home page theme.
 
 == Changelog ==
+
+= V1.2 - 01.08.2016 =
+* Bugfix: The alert was displayed when attachment was chosen.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.3.
 
 = V1.1 - 15.06.2016 =
 * New:    The 'title-tag' theme support was added.
@@ -120,6 +125,9 @@ Download the desired image and make it the featured image. The required size of 
 * Update : Updated functionality for menu items.
 
 == Upgrade Notice ==
+
+= V1.2 =
+The alert was displayed when attachment was chosen. The theme has been tested for the compatibility with WordPress v.4.5.3.
 
 = v1.1 =
 The 'title-tag' theme support was added. Fixed mismatch coding standards. Fixed theme styles. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.2. Theme was transferred to new WordPress account.
