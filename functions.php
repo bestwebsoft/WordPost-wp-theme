@@ -106,28 +106,28 @@ function wordpost_the_breadcrumb() {
 	if ( ! is_front_page() ) {
 		echo '<a href="' . home_url() . '">' . __( 'Home', 'wordpost' ) . '</a>';
 		if ( is_category() || is_single() ) {
-			echo '&nbsp-&nbsp';
+			echo '&nbsp;-&nbsp;';
 			single_cat_title();
 			if ( is_single() ) {
 				$category = get_the_category();
 				if ( isset( $category[0] ) ) {
-					echo $category[0]->cat_name . '&nbsp-&nbsp';
+					echo $category[0]->cat_name . '&nbsp;-&nbsp;';
 				}
 				the_title();
 			}
 		} elseif ( is_page() ) {
-			echo '&nbsp-&nbsp' . get_the_title();
+			echo '&nbsp;-&nbsp;' . get_the_title();
 		} elseif ( is_search() ) {
-			echo '&nbsp-&nbsp' . __( 'Search Results', 'wordpost' );
+			echo '&nbsp;-&nbsp;' . __( 'Search Results', 'wordpost' );
 		} elseif ( is_404() ) {
-			echo '&nbsp-&nbsp' . __( 'Page not found', 'wordpost' );
+			echo '&nbsp;-&nbsp;' . __( 'Page not found', 'wordpost' );
 		} elseif ( is_tag() ) {
-			echo '&nbsp-&nbsp';
-			echo single_tag_title() . '&nbsp:&nbsp' . __( 'tag', 'wordpost' );
+			echo '&nbsp;-&nbsp;';
+			echo single_tag_title() . '&nbsp;:&nbsp;' . __( 'tag', 'wordpost' );
 		} elseif ( is_day() ) {
-			echo '&nbsp-&nbsp' . get_the_time( 'j F, Y' ) . '&nbsp:&nbsp' . __( 'archive', 'wordpost' );
+			echo '&nbsp;-&nbsp;' . get_the_time( 'j F, Y' ) . '&nbsp;:&nbsp;' . __( 'archive', 'wordpost' );
 		} elseif ( is_month() ) {
-			echo '&nbsp-&nbsp' . get_the_time( 'F, Y' ) . '&nbsp:&nbsp' . __( 'archive', 'wordpost' );
+			echo '&nbsp;-&nbsp;' . get_the_time( 'F, Y' ) . '&nbsp;:&nbsp;' . __( 'archive', 'wordpost' );
 		}
 	} else {
 		_e( 'Home', 'wordpost' );
@@ -136,48 +136,30 @@ function wordpost_the_breadcrumb() {
 
 // Connecting the supplied scripts and styles
 function wordpost_scripts_method() {
-	global $wp_styles;
 	//Connect the main CSS stylesheet
 	wp_enqueue_style( 'wordpost-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'wordpost-style-fonts', get_stylesheet_directory_uri() . '/fonts/fontstyle.css' );
 	// Connect specific styles for IE versions using conditional comments
-	wp_enqueue_style( 'wordpost-ie6', get_template_directory_uri() . '/css/ie6.css', array( 'wordpost-style' ), '1.0.0' );
-	wp_enqueue_style( 'wordpost-ie7', get_template_directory_uri() . '/css/ie.css', array( 'wordpost-style' ), '1.0.0' );
-	wp_enqueue_style( 'wordpost-ie8', get_template_directory_uri() . '/css/ie8.css', array( 'wordpost-style' ), '1.0.0' );
-	$wp_styles->add_data( 'wordpost-ie6', 'conditional', 'IE 6' );
-	$wp_styles->add_data( 'wordpost-ie7', 'conditional', 'IE 7' );
-	$wp_styles->add_data( 'wordpost-ie8', 'conditional', 'IE 8' );
+	wp_enqueue_style( 'wordpost-ie6', get_template_directory_uri() . '/css/ie6.css', array( 'wordpost-style' ) );
+	wp_enqueue_style( 'wordpost-ie7', get_template_directory_uri() . '/css/ie.css', array( 'wordpost-style' ) );
+	wp_enqueue_style( 'wordpost-ie8', get_template_directory_uri() . '/css/ie8.css', array( 'wordpost-style' ) );
+	wp_style_add_data( 'wordpost-ie6', 'conditional', 'IE 6' );
+	wp_style_add_data( 'wordpost-ie7', 'conditional', 'IE 7' );
+	wp_style_add_data( 'wordpost-ie8', 'conditional', 'IE 8' );
 	// Connect with font style file
-	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ) );
+	wp_enqueue_script( 'wordpost-script', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ) );
+	$string_js = array(
+		'chooseFile' => __( 'Choose file...', 'wordpost' ),
+		'fileNotSel' => __( 'File is not selected.', 'wordpost' ),
+	);
+	wp_localize_script( 'wordpost-script', 'stringJs', $string_js );
 	if ( is_singular() ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 
-// Connect PIE file to add to IE6-8 CSS3 properties processing
-function wordpost_ie_lt_9_hack() { ?>
-	<!-- hack for IE versions 8 and smaller -->
-	<!--[if lt IE 9]>
-	<style type="text/css" media="screen">
-		#s, #searchsubmit, #slider img, .section, .widget, .post, .entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image, .type-page, .type-attachment, .post textarea, .comments-area textarea, .type-page textarea, .submit, .button, #submit, .nav_post_link a, input[type="submit"] {
-			behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
-			position: relative;
-			zoom: 1;
-		}
-
-		#navigation ul ul {
-			-pie-background: url("<?php echo get_stylesheet_directory_uri() . '/images/drop_nav_arrow.png'; ?>") no-repeat top, url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_bottom.png'; ?>") no-repeat bottom;
-			behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
-		}
-
-		#navigation ul ul ul {
-			-pie-background: url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_top.png'; ?>") no-repeat top, url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_bottom.png'; ?>") no-repeat bottom;
-			behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
-		}
-	</style>
-	<![endif]-->
-	<!-- /child theme hack for versions of IE 8 or less --><?php
+function wordpost_admin_script() {
+	wp_enqueue_script( 'wordpost_admin_script', get_template_directory_uri() . '/js/script_admin.js', array( 'jquery' ) );
 }
 
 // show  comments
@@ -187,53 +169,55 @@ function wordpost_comment( $comment, $args, $depth ) {
 		case 'pingback' :
 		case 'trackback' : ?>
 			<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-			<p><?php _e( 'Pingback:', 'wordpost' ); ?><?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'wordpost' ), '<span class="edit-link">', '</span>' ); ?></p>
+				<p>
+					<?php _e( 'Pingback:', 'wordpost' ); ?><?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'wordpost' ), '<span class="edit-link">', '</span>' ); ?>
+				</p>
+			</li>
 			<?php break;
 		default :
 			global $post; ?>
 			<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-			<div id="comment-<?php comment_ID(); ?>" class="comment">
-				<div class="comment-meta comment-author vcard">
-					<?php echo get_avatar( $comment, 44 );
-					printf( '<cite class="fn">%1$s %2$s</cite>',
-						get_comment_author_link(),
-						( $comment->user_id === $post->post_author ) ? '<span> ' . __( 'Post author', 'wordpost' ) . '</span>' : ''
-					);
-					printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
-						esc_url( get_comment_link( $comment->comment_ID ) ),
-						get_comment_time( 'c' ),
-						sprintf( __( '%1$s at %2$s', 'wordpost' ), get_comment_date(), get_comment_time() )
-					); ?>
-				</div><!-- .comment-meta -->
-				<?php if ( '0' == $comment->comment_approved ) : ?>
-					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'wordpost' ); ?></p>
-				<?php endif; ?>
-				<section class="comment-content comment">
-					<?php comment_text(); ?>
-					<?php edit_comment_link( __( 'Edit', 'wordpost' ), '<p class="edit-link">', '</p>' ); ?>
-				</section><!-- .comment-content -->
-				<div class="reply">
-					<?php comment_reply_link( array_merge( $args, array(
-						'reply_text' => __( 'Reply', 'wordpost' ),
-						'after'      => ' <span>&darr;</span>',
-						'depth'      => $depth,
-						'max_depth'  => $args['max_depth'],
-					) ) ); ?>
-				</div><!-- .reply -->
-			</div><!-- #comment-## -->
+				<div id="comment-<?php comment_ID(); ?>" class="comment">
+					<div class="comment-meta comment-author vcard">
+						<?php echo get_avatar( $comment, 44 );
+						printf( '<cite class="fn">%1$s %2$s</cite>',
+							get_comment_author_link(),
+							( $comment->user_id === $post->post_author ) ? '<span> ' . __( 'Post author', 'wordpost' ) . '</span>' : ''
+						);
+						printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
+							esc_url( get_comment_link( $comment->comment_ID ) ),
+							get_comment_time( 'c' ),
+							sprintf( __( '%1$s at %2$s', 'wordpost' ), get_comment_date(), get_comment_time() )
+						); ?>
+					</div><!-- .comment-meta -->
+					<?php if ( '0' == $comment->comment_approved ) : ?>
+						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'wordpost' ); ?></p>
+					<?php endif; ?>
+					<section class="comment-content comment">
+						<?php comment_text(); ?>
+						<?php edit_comment_link( __( 'Edit', 'wordpost' ), '<p class="edit-link">', '</p>' ); ?>
+					</section><!-- .comment-content -->
+					<div class="reply">
+						<?php comment_reply_link( array_merge( $args, array(
+							'reply_text' => __( 'Reply', 'wordpost' ),
+							'after'      => ' <span>&darr;</span>',
+							'depth'      => $depth,
+							'max_depth'  => $args['max_depth'],
+						) ) ); ?>
+					</div><!-- .reply -->
+				</div><!-- #comment-## -->
+			</li>
 			<?php break;
 	endswitch; // end comment_type check
 }
 
 // show date of the creations of the post, in which category contains
 function wordpost_entry_data() {
-	echo __( 'Posted on', 'wordpost' ) . '&nbsp<span class="meta-title"><a href="' . esc_url( get_permalink() ) . '" title="' . esc_attr( sprintf( __( 'Permalink to %s', 'wordpost' ), the_title_attribute( 'echo=0' ) ) ) . '">';
-	the_time( 'j F, Y' );
-	echo '</a></span>&nbsp';
-	$categories_list = get_the_category_list( ', ' );
+	echo __( 'Posted on', 'wordpost' ) . sprintf( ' <span class="meta-title"><a href="%1$s" title="%2$s">%3$s</a></span> ', esc_url( ( is_singular() ) ? get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) : get_the_permalink() ), the_title_attribute( 'echo=0' ), get_the_date() );
+			 $categories_list = get_the_category_list( ', ' );
 	if ( $categories_list ) {
 		_e( 'in', 'wordpost' );
-		echo '&nbsp<span class="meta-title">' . $categories_list . '</span>';
+		echo '&nbsp;<span class="meta-title">' . $categories_list . '</span>';
 	}
 }
 
@@ -327,16 +311,10 @@ function wordpost_slide_meta_save( $post_id ) {
 	}
 }
 
-function wordpost_admin_script() {
-	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'wordpost_admin_script', get_template_directory_uri() . '/js/script_admin.js', array( 'jquery' ) );
-}
-
 add_action( 'after_setup_theme', 'wordpost_support_theme' );
-add_action( 'init', 'wordpost_init_metabox' );
-add_action( 'widgets_init', 'wordpost_widgets_init' );
-add_filter( 'wp_head', 'wordpost_ie_lt_9_hack' );
 add_action( 'wp_enqueue_scripts', 'wordpost_scripts_method' );
 add_action( 'admin_enqueue_scripts', 'wordpost_admin_script' );
+add_action( 'widgets_init', 'wordpost_widgets_init' );
+add_action( 'init', 'wordpost_init_metabox' );
 add_action( 'add_meta_boxes', 'wordpost_add_slide_metabox' );
 add_action( 'save_post', 'wordpost_slide_meta_save' );

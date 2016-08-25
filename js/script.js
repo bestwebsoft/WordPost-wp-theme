@@ -52,7 +52,7 @@
 	};
 	/* custom input file module */
 	$.fn.customInpfile = function(){
-		var InpfileStructure = '<div class="fileLoad"><button></button><input type="text" value="File is not selected." /></div>';
+		var InpfileStructure = '<div class="fileLoad"><button>' + stringJs.chooseFile + '</button><input type="text" value="' + stringJs.fileNotSel + '" /></div>';
 		var ImputFileDiv = '<div class="file-load-block"></div>';
 		$('input:file').wrap(ImputFileDiv);
 		$(InpfileStructure).insertBefore('input:file');
@@ -60,7 +60,7 @@
 		/* track the change INPUT file */
 		$('input:file').change(function(){
 		/* If the file is attached skid value into a variable */
-			var fileResult = $( this )[ 0 ].files[ 0 ][ 'name' ];
+			var fileResult = $( this )[0].files[0]['name'];
 			/* And then pass the value to the INPUT which is under the boot */
 			$(this).parent().find('.fileLoad').find('input').val(fileResult);
 		});

@@ -20,7 +20,7 @@ $count_posts = 1; ?>
 				$count_posts ++;
 			} // end of the loop. ?>
 			<div class="nav_post_link">
-				<div class="alignleft"><?php next_posts_link( __( '&laquo; Older posts ', 'wordpost' ), '' ) ?></div>
+				<div class="alignleft"><?php next_posts_link( __( '&laquo; Older posts', 'wordpost' ), '' ) ?></div>
 				<div class="alignright"><?php previous_posts_link( __( 'Newer posts &raquo;', 'wordpost' ) ) ?></div>
 			</div><!-- end .nav_post_link -->
 		<?php } else { //Action if no posts ?>

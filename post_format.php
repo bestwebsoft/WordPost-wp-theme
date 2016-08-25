@@ -6,7 +6,13 @@
  */
 global $count_posts; ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	<h2 class="entry-title">
+		<?php if ( is_singular() ) {
+			the_title();
+		} else {
+			the_title( '<a href="' . get_the_permalink() . '">', '</a>' );
+		} ?>
+	</h2>
 	<div class="entry-meta">
 		<?php wordpost_entry_data(); ?>
 	</div><!-- end .entry-meta -->
@@ -20,7 +26,10 @@ global $count_posts; ?>
 			<?php wp_link_pages(); ?>
 		</div><!-- end .pagination_list -->
 	</div><!-- end .entry-content -->
-	<div class="tags_links"><?php the_tags();
+	<div class="tags_links">
+		<?php if ( has_tag() ) {
+			the_tags();
+		}
 		edit_post_link( __( 'Edit', 'wordpost' ), '<span class="edit-link">', '</span>' ); ?>
 	</div><!-- end .tags_links -->
 	<?php if ( 1 < $count_posts ) { ?>

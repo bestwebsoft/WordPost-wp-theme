@@ -12,8 +12,8 @@ global $count_posts; ?>
 	</div><!-- end .entry-content -->
 	<div class="entry-meta">
 		<?php wordpost_entry_data();
-		edit_post_link( __( 'Edit', 'wordpost' ), '<span class="edit-link">', '</span>' ); ?>
-		<?php if ( 1 < $count_posts ) { ?>
+		edit_post_link( __( 'Edit', 'wordpost' ), '<span class="edit-link">', '</span>' );
+		if ( 1 < $count_posts ) { ?>
 			<div class="top-link">
 				<small>
 					<a href="#top">[<?php _e( 'Top', 'wordpost' ); ?>]</a>

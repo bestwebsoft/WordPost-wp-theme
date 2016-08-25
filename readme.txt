@@ -4,8 +4,8 @@ Author URI: http://bestweblayout.com/
 Donate link: http://bestwebsoft.com/donate/
 Tags: two-columns, left-sidebar, custom-background, custom-header, custom-menu, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.2
-Tested up to: 4.5.3
-Stable tag: 1.2
+Tested up to: 4.6
+Stable tag: 1.3
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Wordpost WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -92,6 +92,9 @@ Download the desired image and make it the featured image. The required size of 
 
 == Changelog ==
 
+= V1.3 - 25.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
+
 = V1.2 - 01.08.2016 =
 * Bugfix: The alert was displayed when attachment was chosen.
 * Update: The theme has been tested for the compatibility with WordPress v.4.5.3.
@@ -125,6 +128,9 @@ Download the desired image and make it the featured image. The required size of 
 * Update : Updated functionality for menu items.
 
 == Upgrade Notice ==
+
+= V1.3 =
+* The compatibility with new WordPress version updated.
 
 = V1.2 =
 The alert was displayed when attachment was chosen. The theme has been tested for the compatibility with WordPress v.4.5.3.

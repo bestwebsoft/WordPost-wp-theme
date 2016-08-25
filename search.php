@@ -10,8 +10,8 @@ get_sidebar(); ?>
 <div id="wordpost_content"><a id="top"></a>
 	<div class="post search_result">
 		<h2 class="entry-title">
-			<?php _e( 'You searched for ', 'wordpost' );
-			echo '<span>' . get_search_query() . '.</span>&nbsp';
+			<?php _e( 'You searched for', 'wordpost' );
+			echo ' <span>' . get_search_query() . '.</span> ';
 			_e( 'Here is the results:', 'wordpost' ); ?>
 		</h2>
 	</div><!-- end .post search_result -->
@@ -22,7 +22,7 @@ get_sidebar(); ?>
 			$count_posts ++;
 		} // end of the loop. ?>
 		<div class="nav_post_link">
-			<div class="alignleft"><?php next_posts_link( __( '&laquo; Older posts ', 'wordpost' ), '' ) ?></div>
+			<div class="alignleft"><?php next_posts_link( __( '&laquo; Older posts', 'wordpost' ), '' ) ?></div>
 			<div class="alignright"><?php previous_posts_link( __( 'Newer posts &raquo;', 'wordpost' ) ) ?></div>
 		</div><!-- end .nav_post_link -->
 	<?php } else { //end have_posts() check, when posts are present?>

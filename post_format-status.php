@@ -10,7 +10,13 @@ global $count_posts; ?>
 	<div class="entry-header">
 		<div class="format_status_title">
 			<h3><?php the_author(); ?></h3>
-			<span class="meta-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'wordpost' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_time( 'j F, Y' ); ?></a></span>
+			<span class="meta-title">
+				<?php if ( is_singular() ) {
+					printf( '<a href="%1$s" title="%2$s">%3$s</a>', esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ), the_title_attribute( 'echo=0' ), get_the_date() );
+				} else {
+					printf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>', esc_url( get_the_permalink() ), esc_attr( sprintf( __( 'Permalink to %s', 'wordpost' ), the_title_attribute( 'echo=0' ) ) ), get_the_date() );
+				} ?>
+			</span>
 		</div><!-- end .format_status_title-->
 		<?php echo get_avatar( get_the_author_meta( 'ID' ), apply_filters( 'wordpost_status_avatar', '48' ) ); ?>
 	</div><!-- end .entry-header-->

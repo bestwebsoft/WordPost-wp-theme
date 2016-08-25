@@ -10,7 +10,13 @@ global $count_posts; ?>
 		<?php the_content(); ?>
 	</div><!-- end .entry-content -->
 	<div class="entry-meta">
-		<h4 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+		<h4 class="entry-title">
+			<?php if ( is_singular() ) {
+				the_title();
+			} else {
+				the_title( '<a href="' . get_the_permalink() . '">', '</a>' );
+			} ?>
+		</h4>
 		<?php wordpost_entry_data();
 		edit_post_link( __( 'Edit', 'wordpost' ), '<span class="edit-link">', '</span>' ); ?>
 		<?php if ( 1 < $count_posts ) { ?>

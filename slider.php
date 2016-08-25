@@ -4,20 +4,21 @@
  * @subpackage wordpost
  * @since      wordpost
  */
-// Query arguments
-global $wpdb;
-$array_postid_of_slide = $wpdb->get_col( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'wordpost_slide_image' AND meta_value = 'yes'" );
-$number_slides         = count( $array_postid_of_slide );
-if ( 0 == $number_slides ) {
-	return;
-}
 
 $args = array(
 	'post_type'           => 'post',
-	'post__in'            => $array_postid_of_slide,
-	'posts_per_page'      => $number_slides,
+	'meta_key'            => 'wordpost_slide_image',
+	'meta_value'          => 'yes',
+	'posts_per_page'      => '100',
 	'ignore_sticky_posts' => 1,
+	'meta_query'          => array(
+		array(
+			'key'     => '_thumbnail_id',
+			'compare' => 'EXISTS',
+		),
+	),
 );
+
 // Apply a new global variable The Query
 $the_query = new WP_Query( $args );
 // Check The Query, if any posts - we show a slider

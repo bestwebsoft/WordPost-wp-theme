@@ -4,22 +4,15 @@
  * @subpackage wordpost
  * @since      wordpost
  */
-get_header(); ?>
-<?php get_sidebar();
+get_header();
+get_sidebar();
 $count_posts = 1; ?>
 <div id="wordpost_content"><a id="top"></a>
 	<div class="post">
 		<h2 class="entry-title">
-			<?php if ( is_day() ) {
-				printf( __( 'Daily Archives: %s', 'wordpost' ), get_the_date() );
-			} elseif ( is_month() ) {
-				printf( __( 'Monthly Archives: %s', 'wordpost' ), get_the_date( 'F Y' ) );
-			} elseif ( is_year() ) {
-				printf( __( 'Yearly Archives: %s', 'wordpost' ), get_the_date( 'Y' ) );
-			} else {
-				printf( __( 'Archive of the tags: %s', 'wordpost' ), single_tag_title( '', false ) );
-			} ?>
+			<?php the_archive_title(); ?>
 		</h2>
+		<p><?php the_archive_description(); ?></p>
 	</div><!--.post for name of archive -->
 	<?php if ( have_posts() ) {
 		while ( have_posts() ) {
@@ -28,7 +21,7 @@ $count_posts = 1; ?>
 			$count_posts ++;
 		} // end of the loop. ?>
 		<div class="nav_post_link">
-			<div class="alignleft"><?php next_posts_link( __( '&laquo; Older posts ', 'wordpost' ), '' ) ?></div>
+			<div class="alignleft"><?php next_posts_link( __( '&laquo; Older posts', 'wordpost' ), '' ) ?></div>
 			<div class="alignright"><?php previous_posts_link( __( 'Newer posts &raquo;', 'wordpost' ) ) ?></div>
 		</div>
 	<?php } else { //end have_posts() check, when posts are present

@@ -10,12 +10,11 @@
 </div><!-- end #wrapper -->
 <div id="footer">
 	<div id="foot_top">
-		<p>&copy;
-			<?php echo date( 'Y' ) . ' ';
-			bloginfo( 'name' ) ?>
+		<p>
+			<?php echo '&copy; ' . date_i18n( 'Y ' ) . get_bloginfo( 'name' ) ?>
 		</p>
 		<div id="foot_author">
-			<p><?php _e( ' Powered by ', 'wordpost' ); ?>
+			<p><?php _e( 'Powered by ', 'wordpost' ); ?>
 				<a href="<?php echo esc_url( wp_get_theme()->get( 'AuthorURI' ) ); ?>">BestWebLayout</a></p>
 		</div><!-- end #foot_author -->
 	</div><!-- end #foot_top -->

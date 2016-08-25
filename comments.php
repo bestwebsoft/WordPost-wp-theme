@@ -10,18 +10,17 @@ if ( post_password_required() ) {
 if ( have_comments() ) { ?>
 	<div id="comments" class="comments-area">
 		<h2 class="comments-title">
-			<?php $number_comments = get_comments_number(); // Get number of comments for post
-			if ( 1 == $number_comments ) { // If one comment
-				echo __( 'One thought on &ldquo;', 'wordpost' ) . get_the_title() . '&rdquo;';
-			} elseif ( 1 < $number_comments ) { // If more than one message
-				echo number_format_i18n( $number_comments ) . __( '&nbsp;thoughts on &ldquo;', 'wordpost' ) . get_the_title() . '&rdquo;';
-			} ?>
+			<?php printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'wordpost' ), number_format_i18n( get_comments_number() ), get_the_title() ); ?>
 		</h2><!-- end .comments-title -->
 		<ol class="commentlist">
 			<?php wp_list_comments( array( 'callback' => 'wordpost_comment', 'style' => 'ol' ) ); ?>
 		</ol><!-- end .commentlist -->
-		<?php previous_comments_link();
-		next_comments_link(); ?>
+		<div class='previous-comments'><?php previous_comments_link( __( '&larr; Older Comments', 'wordpost' ) ); ?></div>
+		<div class='next-comments'><?php next_comments_link( __( 'Newer Comments &rarr;', 'wordpost' ) ); ?></div>
+		<div class="clear"></div>
 	</div><!-- end #comments .comments-area -->
-<?php } // end have_comments()
+<?php }
+if ( ! comments_open() ) { ?>
+	<p class='nocomments'><?php _e( 'Comments are closed.', 'wordpost' ); ?></p>
+<?php }
 comment_form();
